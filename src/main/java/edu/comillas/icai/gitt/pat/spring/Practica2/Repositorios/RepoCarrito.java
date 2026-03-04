@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface RepoCarrito extends CrudRepository<Carrito, Long> {
-    List<Carrito> findByCorreoUsuario(String correoUsuario);
+    Carrito findByCorreoUsuario(String correoUsuario);
 }
