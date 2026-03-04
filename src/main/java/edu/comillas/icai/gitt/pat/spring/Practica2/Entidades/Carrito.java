@@ -7,10 +7,10 @@ import jakarta.persistence.*;
 public class Carrito {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long IdCarrito;
+    public Long idCarrito;
 
     @Column(nullable = false, unique = true)
-    public Long IdUsuario;
+    public Long idUsuario;
 
     @Column(nullable = false, unique = true)
     public String correoUsuario;
