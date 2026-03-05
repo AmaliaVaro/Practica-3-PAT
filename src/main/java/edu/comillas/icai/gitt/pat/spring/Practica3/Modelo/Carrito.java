@@ -1,4 +1,4 @@
-package edu.comillas.icai.gitt.pat.spring.Practica2.Modelo;
+package edu.comillas.icai.gitt.pat.spring.Practica3.Modelo;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -9,6 +9,10 @@ public class Carrito {
     private int idArticulo;
     @NotBlank(message = "La descripcion es obligatoria")
     private String descripcion;
+    @NotBlank(message = "El correo es obligatorio")
+    private String correoUsuario;
+
+
     @Min(1) //Para no poder crear un carrito con 0 unidades
     private int unidades;
     private double precioFinal;
@@ -19,6 +23,13 @@ public class Carrito {
         this.descripcion = descripcion;
         this.unidades = unidades;
         this.precioFinal = precioFinal;
+    }
+    public String getCorreoUsuario() {
+        return correoUsuario;
+    }
+
+    public void setCorreoUsuario(String correoUsuario) {
+        this.correoUsuario = correoUsuario;
     }
 
     public int getIdCarrito() {

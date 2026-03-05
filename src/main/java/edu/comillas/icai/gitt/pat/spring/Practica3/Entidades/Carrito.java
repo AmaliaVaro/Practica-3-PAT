@@ -1,4 +1,4 @@
-package edu.comillas.icai.gitt.pat.spring.Practica2.Entidades;
+package edu.comillas.icai.gitt.pat.spring.Practica3.Entidades;
 
 
 import jakarta.persistence.*;
